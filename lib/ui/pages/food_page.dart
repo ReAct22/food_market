@@ -6,8 +6,11 @@ class FoodPage extends StatefulWidget {
 }
 
 class _FoodPageState extends State<FoodPage> {
+  int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
+    double ListItemWidth =
+        MediaQuery.of(context).size.width - 2 * defaultMargin;
     return ListView(
       children: [
         Column(
@@ -50,8 +53,69 @@ class _FoodPageState extends State<FoodPage> {
               ),
             ),
             ////List of Food
-            FoodCard(mockFood)
+            Container(
+              height: 258,
+              width: double.infinity,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Row(
+                    children: mockFoods
+                        .map((e) => Padding(
+                              padding: EdgeInsets.only(
+                                  left: (e == mockFoods.first)
+                                      ? defaultMargin
+                                      : 0,
+                                  right: defaultMargin),
+                              child: FoodCard(e),
+                            ))
+                        .toList(),
+                  )
+                ],
+              ),
+            ),
             ////List Of Food (Tabs)
+            Container(
+              width: double.infinity,
+              color: Colors.white,
+              child: Column(
+                children: [
+                  CustomTabBar(
+                    titles: ['New Taste', 'Popular', 'Recommended'],
+                    selectedIndex: selectedIndex,
+                    onTap: (index) {
+                      setState(() {
+                        selectedIndex = index;
+                      });
+                    },
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Builder(builder: (_) {
+                    List<Food> foods = (selectedIndex == 0)
+                        ? mockFoods
+                        : (selectedIndex == 1)
+                            ? []
+                            : [];
+
+                    return Column(
+                      children: foods
+                          .map((e) => Padding(
+                                padding: EdgeInsets.fromLTRB(
+                                    defaultMargin, 0, defaultMargin, 16),
+                                child: FoodListItem(
+                                    food: e, itemWidth: ListItemWidth),
+                              ))
+                          .toList(),
+                    );
+                  }),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 80,
+            )
           ],
         )
       ],

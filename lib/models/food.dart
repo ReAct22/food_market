@@ -19,12 +19,32 @@ class Food {
       this.rate});
 }
 
-Food mockFood = Food(
-    id: 1,
-    picturePath:
-        "https://selerasa.com/wp-content/uploads/2015/05/images_mie_Mie_ayam_14-mie-ayam-kampung-1200x798.jpg",
-    name: "mie Ayam",
-    description: "mie ayam yang enak",
-    ingredients: "Mie, Ayam, Sayuran",
-    price: 10000,
-    rate: 4.5);
+List<Food> mockFoods = [
+  Food(
+      id: 1,
+      picturePath:
+          "https://selerasa.com/wp-content/uploads/2015/05/images_mie_Mie_ayam_14-mie-ayam-kampung-1200x798.jpg",
+      name: "mie Ayam",
+      description: "mie ayam yang enak",
+      ingredients: "Mie, Ayam, Sayuran",
+      price: 10000,
+      rate: 4.5),
+  Food(
+      id: 2,
+      picturePath:
+          "https://selerasa.com/wp-content/uploads/2015/05/images_mie_Mie_ayam_14-mie-ayam-kampung-1200x798.jpg",
+      name: "mie Ayam",
+      description: "mie ayam yang enak",
+      ingredients: "Mie, Ayam, Sayuran",
+      price: 10000,
+      rate: 4.5),
+  Food(
+      id: 3,
+      picturePath:
+          "https://selerasa.com/wp-content/uploads/2015/05/images_mie_Mie_ayam_14-mie-ayam-kampung-1200x798.jpg",
+      name: "mie Ayam",
+      description: "mie ayam yang enak",
+      ingredients: "Mie, Ayam, Sayuran",
+      price: 10000,
+      rate: 4.5),
+];

@@ -9,6 +9,7 @@ class _FoodPageState extends State<FoodPage> {
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
+    // ignore: non_constant_identifier_names
     double ListItemWidth =
         MediaQuery.of(context).size.width - 2 * defaultMargin;
     return ListView(
@@ -46,7 +47,7 @@ class _FoodPageState extends State<FoodPage> {
                         borderRadius: BorderRadius.circular(8),
                         image: DecorationImage(
                             image: NetworkImage(
-                                'https://i.pinimg.com/originals/62/b0/30/62b030e0d1f53810443038c0ff26b5c9.png'),
+                                'https://awsimages.detik.net.id/visual/2021/01/22/jenniiie-blackpink-dok-jennierubyjane.jpeg?w=650'),
                             fit: BoxFit.cover)),
                   )
                 ],

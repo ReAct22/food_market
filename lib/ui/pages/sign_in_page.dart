@@ -73,6 +73,7 @@ class _SignInPageState extends State<SignInPage> {
                     size: 45,
                     color: mainColor,
                   )
+                // ignore: deprecated_member_use
                 : RaisedButton(
                     onPressed: () {},
                     elevation: 0,
@@ -96,6 +97,7 @@ class _SignInPageState extends State<SignInPage> {
                     size: 45,
                     color: mainColor,
                   )
+                // ignore: deprecated_member_use
                 : RaisedButton(
                     onPressed: () {
                       Get.to(SignUpPage());

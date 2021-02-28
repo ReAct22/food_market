@@ -12,7 +12,7 @@ class _SignInPageState extends State<SignInPage> {
     TextEditingController passwordController = TextEditingController();
     bool isloading = false;
 
-    return GenrealPage(
+    return GeneralPage(
       title: 'Sign In',
       subtitle: "Fine your best ever meal",
       child: Column(

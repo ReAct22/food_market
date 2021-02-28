@@ -1,13 +1,13 @@
 part of 'pages.dart';
 
-class GenrealPage extends StatelessWidget {
+class GeneralPage extends StatelessWidget {
   final String title;
   final String subtitle;
   final Function onBackButtonPressed;
   final Widget child;
   final Color backColor;
 
-  GenrealPage(
+  GeneralPage(
       {this.title = "Title",
       this.subtitle = "subtitle",
       this.onBackButtonPressed,

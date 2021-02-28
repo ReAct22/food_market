@@ -183,6 +183,7 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
                             SizedBox(
                               width: 163,
                               height: 45,
+                              // ignore: deprecated_member_use
                               child: RaisedButton(
                                 onPressed: () {},
                                 color: mainColor,

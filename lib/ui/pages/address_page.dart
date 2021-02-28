@@ -10,9 +10,9 @@ class _AddressPageState extends State<AddressPage> {
   Widget build(BuildContext context) {
     TextEditingController phoneController = TextEditingController();
     TextEditingController addressController = TextEditingController();
-    TextEditingController housenumController = TextEditingController();
+    TextEditingController houseNumController = TextEditingController();
 
-    return GenrealPage(
+    return GeneralPage(
       title: 'Address',
       subtitle: "Make sure it's valid",
       onBackButtonPressed: () {
@@ -82,7 +82,7 @@ class _AddressPageState extends State<AddressPage> {
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: Colors.black)),
             child: TextField(
-              controller: housenumController,
+              controller: houseNumController,
               decoration: InputDecoration(
                   border: InputBorder.none,
                   hintStyle: greyFontStyle,
@@ -98,33 +98,34 @@ class _AddressPageState extends State<AddressPage> {
             ),
           ),
           Container(
-              width: double.infinity,
-              margin: EdgeInsets.symmetric(horizontal: defaultMargin),
-              padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  border: Border.all(color: Colors.black)),
-              child: DropdownButton(
-                  isExpanded: true,
-                  underline: SizedBox(),
-                  items: [
-                    DropdownMenuItem(
-                        child: Text(
-                      'Bandung',
-                      style: blackFontStyle3,
-                    )),
-                    DropdownMenuItem(
-                        child: Text(
-                      'Jakarta',
-                      style: blackFontStyle3,
-                    )),
-                    DropdownMenuItem(
-                        child: Text(
-                      'Surabaya',
-                      style: blackFontStyle3,
-                    )),
-                  ],
-                  onChanged: (item) {})),
+            width: double.infinity,
+            margin: EdgeInsets.symmetric(horizontal: defaultMargin),
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: Colors.black)),
+            child: DropdownButton(
+                isExpanded: true,
+                underline: SizedBox(),
+                items: [
+                  DropdownMenuItem(
+                      child: Text(
+                    'Bandung',
+                    style: blackFontStyle3,
+                  )),
+                  DropdownMenuItem(
+                      child: Text(
+                    'Jakarta',
+                    style: blackFontStyle3,
+                  )),
+                  DropdownMenuItem(
+                      child: Text(
+                    'Surabaya',
+                    style: blackFontStyle3,
+                  ))
+                ],
+                onChanged: (item) {}),
+          ),
           Container(
             width: double.infinity,
             margin: EdgeInsets.only(top: 24),

@@ -12,7 +12,7 @@ class _SignUpPageState extends State<SignUpPage> {
     TextEditingController passwordController = TextEditingController();
     TextEditingController nameController = TextEditingController();
 
-    return GenrealPage(
+    return GeneralPage(
       title: 'Sign Up',
       subtitle: "Register and Eat",
       onBackButtonPressed: () {

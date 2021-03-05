@@ -1,5 +1,7 @@
 part of 'models.dart';
 
+//menyimpan data2 makanan
+
 class Food extends Equatable {
   final int id;
   final String picturePath;
@@ -25,43 +27,56 @@ class Food extends Equatable {
 
 List<Food> mockFoods = [
   Food(
-      id: 1,
-      picturePath:
-          "https://selerasa.com/wp-content/uploads/2015/05/images_mie_Mie_ayam_14-mie-ayam-kampung-1200x798.jpg",
-      name: "mie Ayam",
-      description:
-          "Mi ayam atau bakmi ayam adalah masakan Indonesia yang terbuat dari mi kuning direbus mendidih kemudian ditaburi saus kecap khusus beserta daging ayam dan sayuran. Mi ayam terkadang ditambahi dengan bakso, pangsit, dan jamur. Mi berasal dari Tiongkok, tetapi mi ayam yang serupa di Indonesia tidak ditemukan di Tiongkok.[butuh rujukan] Mi ayam aslinya dari Tiongkok Selatan terutama dari daerah-daerah pelabuhan seperti Fujian dan Guandong.[butuh rujukan] Meskipun mi bukan asli Indonesia tapi nyatanya kini mi ayam seakan sudah menjadi makanan tradisional Indonesia. Makanan ini sudah tersebar di seluruh Indonesia, terutama di daerah Jawa makanan ini sangat mudah di temukan. Penjual mi ayam di Indonesia yang populer berasal dari Wonogiri",
-      ingredients: "Mie, Ayam, Sayuran",
-      price: 10000,
-      rate: 4.5),
+    id: 1,
+    picturePath:
+        'https://i.pinimg.com/736x/06/7b/28/067b2879e5c9c42ec669bf639c3fbffc.jpg',
+    name: "Sate Usus",
+    description:
+        "Sate Usus merupakan makanan yang berasal dari daerah gue dimana makanan ini sering disajikan dengan nasi dan di tusuk dengan tusuk sate. Sate sendiri adalah jenis makanan unknown",
+    ingredients: "Usus Manusia, Tusuk Sate, Bawang Merah",
+    price: 10000,
+    rate: 4.2,
+  ),
   Food(
-      id: 2,
-      picturePath:
-          "https://cdns.klimg.com/merdeka.com/i/w/news/2019/12/11/1132603/540x270/5-cara-membuat-bakso-sapi-ayam-dan-ikan-ala-rumahan.jpg",
-      name: "Bakso",
-      description:
-          "Bakso atau baso adalah jenis bola daging yang lazim ditemukan pada masakan Indonesia. Bakso umumnya dibuat dari campuran daging sapi giling dan tepung tapioka, tetapi ada juga bakso yang terbuat dari daging ayam, ikan, atau udang bahkan daging kerbau.",
-      ingredients: "Daging, Tepung, Bumbu",
-      price: 12000,
-      rate: 4.5),
+    id: 2,
+    picturePath:
+        "https://cdns.klimg.com/dream.co.id/resources/news/2020/04/06/133546/bikin-steak-di-rumah-pastikan-bumbunya-meresap-2004066.jpg",
+    name: "Steak Daging Babi",
+    description:
+        "Sate Usus merupakan makanan yang berasal dari daerah gue dimana makanan ini sering disajikan dengan nasi dan di tusuk dengan tusuk sate. Sate sendiri adalah jenis makanan unknown",
+    ingredients: "Usus Manusia, Tusuk Sate, Bawang Merah",
+    price: 15000,
+    rate: 2.4,
+  ),
   Food(
-      id: 3,
-      picturePath:
-          "https://awsimages.detik.net.id/community/media/visual/2019/12/20/4bbe09a6-8f40-495c-a95a-cebcb0f391bc.jpeg?a=1",
-      name: "Sate Padang",
-      description:
-          "Sate Padang adalah sebutan untuk tiga jenis varian sate di Sumatra Barat, yaitu Sate Padang, Sate Padang Panjang dan Sate Pariaman. Sate Padang memakai bahan daging sapi, lidah, atau jerohan (jantung, usus, dan tetelan) dengan bumbu kuah kacang kental (mirip bubur) ditambah cabai yang banyak sehingga rasanya pedas.",
-      ingredients: "Ayam, Kacang, Kecap",
-      price: 20000,
-      rate: 4.5),
+    id: 3,
+    picturePath:
+        "https://i1.wp.com/varminz.com/wp-content/uploads/2019/12/mexican-chopped-salad3.jpg?fit=843%2C843&ssl=1",
+    name: "Mexican Chopped Salad",
+    description:
+        "Sate Usus merupakan makanan yang berasal dari daerah gue dimana makanan ini sering disajikan dengan nasi dan di tusuk dengan tusuk sate. Sate sendiri adalah jenis makanan unknown",
+    ingredients: "Usus Manusia, Tusuk Sate, Bawang Merah",
+    price: 12000,
+    rate: 5.0,
+  ),
   Food(
       id: 4,
       picturePath:
-          "https://cdn.idntimes.com/content-images/community/2018/04/big-slider-gado-gado-enak-dan-lezat-d15989179c334422677c80293a7b51c0_600x400.jpg",
-      name: "Gado Gado",
+          "https://images.immediate.co.uk/production/volatile/sites/2/2016/08/25097.jpg?quality=90&resize=768,574",
+      name: "Sup Wortel Pedas",
       description:
-          "Gado-gado adalah salah satu makanan khas yang berasal dari Indonesia yang berupa sayur-sayuran yang direbus dan dicampur jadi satu, dengan bumbu kacang atau saus dari kacang tanah dan yang dihaluskan disertai irisan telur dan pada umumnya banyak yang menambahkan kentang rebus yang sudah dihaluskan untuk dicampur bumbu .",
-      ingredients: "Sayuran, Kacang, Kecap",
-      price: 10000,
-      rate: 4.5),
+          "Sup wortel pedas yang unik ini cocok banget buat kalian-kalian yang suka pedas namun ingin tetap sehat. Rasanya yang unik akan memanjakan lidah Anda.",
+      ingredients: "Wortel, Seledri, Kacang Tanah, Labu, Garam, Gula",
+      price: 60000,
+      rate: 4.9),
+  Food(
+      id: 5,
+      picturePath:
+          "https://cmxpv89733.i.lithium.com/t5/image/serverpage/image-id/478345i84598AB4FEB454CB/image-size/large?v=1.0&px=999",
+      name: "Korean Raw Beef Tartare",
+      description:
+          "Daging sapi Korea cincang yang disajikan mentah dan disiram saus spesial dengan toping kuning telur dan taburan biji wijen.",
+      ingredients: "Daging Sapi Korea, Telur, Biji Wijen",
+      price: 350000,
+      rate: 3.4),
 ];
